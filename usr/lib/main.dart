@@ -245,7 +245,7 @@ class AstraChatHistory extends StatelessWidget {
               ),
               borderRadius: BorderRadius.circular(12),
             ),
-            maxWidth: MediaQuery.of(context).size.width * 0.8,
+              constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.8),
             child: Text(
               message.text,
               style: TextStyle(
